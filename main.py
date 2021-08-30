@@ -46,7 +46,7 @@ def notify(title, message):
         return
 
     log.info('准备推送通知...')
-    url = 'https://sc.ftqq.com/{}.send'.format(CONFIG.SCKEY)
+    url = 'https://sctapi.ftqq.com/{}.send'.format(CONFIG.SCKEY)
     payload = {'text': '{}'.format(title), 'desp': message}
 
     try:
